@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+body {
+    font-family: "Titillium Web", sans-serif;
+    --main-color: #fff;
+    --azul-sn: #125f8b;
+    --gris-sn: #7a7a7a;
+    --rojo-prov: #da1d00;
+}
+
+.label_sn {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 17px !important;
+}
+
+.label_sn b {
+    color: rgb(216, 11, 11);
+    font-weight: 600;
+}
+
+.mensaje01 h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    color: var(--azul-sn);
+    font-size: 25px;
+    text-align: center;
+    line-height: auto;
+    margin-bottom: 10px;
+}
+
+.mensaje02 {
+    color: var(--gris-sn);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section_text {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    color: var(--azul-sn);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section_text i {
+    margin-right: 0.5%;
+}
+
+.form-sn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.btns_opc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-azul {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    background-color: var(--azul-sn);
+    color: #fff;
+}
+
+.btn-gris {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    background-color: var(--gris-sn);
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-gris:hover {
+    color: #616161;
+}
+
+.btn-azul:hover {
+    color: #125f8b;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.recaptcha img {
+    width: 250px;
+}
+
+.recaptcha {
+    padding-top: 1rem !important;
+    justify-content: center;
+    height: 79px;
+}
+
+@media (min-width: 0px) {
+    #sectilpas02 {
+        margin-top: 0 !important;
+    }
+    body {
+        overflow: scroll !important;
+    }
+    #formulario_01 {
+        padding: 0 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        padding-bottom: 290px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 0 !important;
+    }
+    #sec_validate {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 1rem !important;
+    }
+    .select_sn {
+        width: 100% !important;
+    }
+    .select_sn input,
+    select {
+        flex: 1 1 auto !important;
+    }
+    #subform_01 .d-flex {
+        display: block !important;
+    }
+    #msj_opc {
+        font-size: 18px !important;
+    }
+    .texto_exito {
+        width: 100% !important;
+        display: flex;
+        text-align: justify !important;
+        justify-content: center !important;
+        border-left: none !important;
+        color: #333;
+        margin-bottom: 1%;
+        font-size: 15px !important;
+        line-height: 23px;
+        flex-direction: column;
+        font-weight: 500;
+        padding: 1rem 0.8rem 0 0.8rem !important;
+    }
+    .sector_info {
+        width: 100% !important;
+        padding: 1rem 0.5rem 290px 0.5rem !important;
+        margin-top: 0 !important;
+    }
+    #foto_listo {
+        display: none !important;
+    }
+    .mensaje_exito {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        line-height: 19px;
+        font-size: 20px !important;
+        color: var(--azul-sn);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        padding-bottom: 2rem !important;
+    }
+    .mensaje_exito .mailing {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .icono {
+        color: #66c86a;
+        font-size: 60px !important;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    #captchav3 {
+        right: 0px;
+        bottom: 240px !important;
+        position: fixed;
+    }
+}
+
+@media (min-width: 768px) {
+    #formulario_01 {
+        padding: 0 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        padding-bottom: 290px !important;
+    }
+    #sec_validate {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .select_sn {
+        width: 100% !important;
+    }
+    #subform_01 .d-flex {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #formulario_01 {
+        padding: 0 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #sec_validate {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .select_sn {
+        width: 100% !important;
+    }
+    #subform_01 .d-flex {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1100px) {
+    #sectilpas02 {
+        margin-top: 2rem !important;
+    }
+    body {
+        overflow: hidden !important;
+    }
+    #formulario_01 {
+        padding: 0 7rem 0 7rem;
+        width: 100% !important;
+        height: fit-content !important;
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-bottom: 0 !important;
+    }
+    #sec_validate {
+        padding-top: 0.5rem !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    .select_sn {
+        width: fit-content !important;
+    }
+    #subform_01 .d-flex {
+        display: flex !important;
+    }
+    .sector_info {
+        width: 50% !important;
+        padding: 1rem 0.5rem 0px 4rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 6% !important;
+    }
+    .mensaje_exito {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        line-height: 19px;
+        font-size: 30px;
+        color: var(--gris-sn);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 0 !important;
+        font-size: 20px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        font-size: 25px !important;
+    }
+    .icono {
+        color: #66c86a;
+        font-size: 30px !important;
+        margin-right: 1%;
+    }
+    .texto_exito {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        border-left: 3px solid var(--rojo-prov) !important;
+        padding-left: 3% !important;
+        color: #333;
+        margin-bottom: 1%;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        flex-direction: column;
+        font-weight: 500;
+        text-align: justify;
+        width: 90% !important;
+    }
+    #foto_listo {
+        display: flex !important;
+        padding-bottom: 130px !important;
+    }
+    #captchav3 {
+        right: 0px;
+        bottom: 190px !important;
+        position: fixed;
+    }
+}
+
+@media (min-width: 1400px) {
+    #formulario_01 {
+        width: 86% !important;
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+    #sec_validate {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .select_sn {
+        width: fit-content !important;
+    }
+    #subform_01 .d-flex {
+        display: flex !important;
+    }
+}
+
+#formulario_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#nombre_seccion {
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.icon_sec {
+    border-left: #da1d00 4px solid!important;
+    height: 36px;
+    padding-right: 0.5rem;
+    color: #fff;
+}
+
+#msj_opc {
+    color: #7a7a7a;
+    font-weight: 300;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.select_sn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto !important;
+    padding-top: 1rem;
+}
+
+#subform_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#subform_01 .select_sn {
+    padding: 0.8rem 0.5rem 0 0.5rem;
+}
+
+#sec_validate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main_container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sector_info {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    background-color: var(--main-color);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57%;
+    height: 100%;
+    padding: 2%;
+}
+
+.sector_foto {
+    display: block;
+    width: 43%;
+    height: 666px;
+    max-height: 100%;
+    background-image: url(./img/img_exito.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn-gris {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    background-color: var(--gris-sn);
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-gris:hover {
+    color: #fff;
+    background-color: #5e5e5e;
+}
+
+.texto_exito {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    border-left: 3px solid #125f8b;
+    color: #333;
+    margin-bottom: 1%;
+    font-size: 17.5px;
+    line-height: 23px;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.footer_logo img {
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+.mensaje_exito {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    line-height: 19px;
+    font-size: 30px;
+    color: var(--azul-sn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.icono {
+    color: #66c86a;
+    font-size: 30px;
+    margin-right: 1%;
+}
+
+#captchav3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.27);
+    border: 1.5px solid #c4c4c4;
+    border-radius: 4px 0 0 4px;
+    background-color: #f9f9f9;
+    right: 0px;
+    bottom: 121px;
+    position: fixed;
+}
+
+#captchav3 #captchaimage {
+    width: 37px;
+    height: 37px;
+}
+
+#captchatext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    font-size: 5px !important;
+    font-family: Roboto, helvetica, arial, sans-serif !important;
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SN UX/UI "Maquetas formularios inscripción"</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="16x16">
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <style>
+        body {
+            --main-color: #fff;
+            --bg-color: #C4C4C4;
+            --azul-sn: #1D5BE8;
+            --gris-sn: #686969;
+            --confirmar-sn: #318B57;
+            --cancelar-sn: #D75555;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+        
+        .main_container {
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mail_content {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 2.5%;
+            background-color: var(--main-color);
+            width: 783px;
+            height: fit-content;
+        }
+        
+        .logo_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo_header img {
+            width: 30%;
+            margin-bottom: 2rem;
+        }
+        
+        .mail_body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+        
+        .benef_sn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+        
+        .benef_sn p {
+            margin: 0;
+        }
+        
+        .benef_sn i {
+            font-size: 35px;
+            color: var(--azul-sn);
+            margin-right: 3%;
+        }
+        
+        .seccion_beneficios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .navbar {
+            padding: 0;
+        }
+        
+        .menu_bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .menu_bottom ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .menu_bottom ul li a {
+            margin-right: 10%;
+            width: fit-content;
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="mail_content">
+            <div class="logo_header">
+                <img src="../img/logo_sn_gris.png" alt="">
+            </div>
+            <div class="mail_body">
+                <p>&iexcl;Hola &lt;nombre contacto&gt;!</p>
+                <p>Ya casi lo tienes, continua con tu inscripci&oacute;n <a href="../planes_sn_2021/select_categoria_planes.html">aqui</a>.</p>
+                <div class="seccion_beneficios">
+                    <div class="benef_sn">
+                        <i class="fal fa-chart-line"></i>
+                        <p>Aumenta tus oportunidades de venta accediendo a una comunidad de empresas compradoras de diferentes categor&iacute;as.
+                        </p>
+                    </div>
+                    <div class="benef_sn">
+                        <i class="fal fa-piggy-bank"></i>
+                        <p>Mejora tus flujos de caja accediendo a financiamiento de tus &oacute;rdenes de compra y facturas con tasas preferentes, directamente desde tu portal.</p>
+                    </div>
+                </div>
+
+
+
+                <p>Si tienes dudas cont&aacute;ctanos al email&nbsp;<a href="mailto:contactos@senegocia.com">contactos@senegocia.com</a>&nbsp;o en los siguientes tel&eacute;fonos: <br>
+                    <br />Chile: <a href="tel:+ 56229238700">+ 56 2 29238700</a> <br />Argentina: <a href="tel:+ 54 11 52371213">+ 54
+                        11 52371213</a>
+                    <br />Colombia:&nbsp; <a href="tel:+5714898308">+57 1 4898308</a><br />Per&uacute;:&nbsp;<a href="tel:+5117096357">+51
+                        17096357</a><br />Ecuador, Paraguay: Atenci&oacute;n en nuestro email</p>
+                <br>
+                <p style="text-align: center;margin-top: 0.1rem;">Este correo ha sido generado automáticamente, por favor no responda.
+                </p>
+                <p style="text-align: center;">© Senegocia 2021.</p>
+            </div>
+        </div>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark">
+
+            <div class="menu_bottom">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo_uxui_sn_0222.png" alt="" height="40" class="d-inline-block align-text-top">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" style="margin-right: 10px;">
+                            <i class="fal fa-home-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://kit.fontawesome.com/18f1d9fe30.js" crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

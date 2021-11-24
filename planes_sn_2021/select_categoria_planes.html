@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Selección categorias y planes</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="16x16" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+        .bback_01 {
+            background-color: #002989;
+            height: 350px !important;
+            width: 100% !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .bback_02 {
+            background-color: #002989;
+            height: 150px !important;
+            width: 100% !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            z-index: -2;
+        }
+        
+        .logo {
+            padding: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .logo img {
+            width: 300px;
+            display: flex;
+            margin-bottom: 3%;
+        }
+        
+        .logo_subtext {
+            color: #fff;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+        }
+        
+        .img_planes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 7%;
+        }
+        
+        .img_planes img {
+            height: 340px;
+        }
+        
+        .mensaje_01 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+            flex-direction: column;
+            height: 319px;
+        }
+        
+        .mensaje_01 .m01 {
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+        }
+        
+        .m02 {
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            padding: 1.9%;
+        }
+        
+        .m03 {
+            color: #ffffff;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        
+        .ac01 {
+            color: #002989;
+        }
+        
+        .btn_scroll {
+            text-decoration: none;
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+        .btn_scroll:hover {
+            color: #808080;
+        }
+        
+        .section_planes {
+            height: 319px;
+        }
+        
+        .bg-plan_card {
+            width: 300px;
+            height: 450px;
+            background-color: #fff;
+            margin-top: -35px;
+        }
+        
+        .float_plan_card {
+            width: 300px;
+            height: 450px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #808080;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #ffffff;
+            transition: width 0.35s ease-in-out;
+            box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.26);
+        }
+        
+        .float_plan_card:hover {
+            box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.26);
+            z-index: 3;
+        }
+        
+        .float_plan_card span {
+            color: #fff;
+            font-size: 14px;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            width: 50%;
+            height: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .group_cards {
+            padding: 0px 23px 0px 23px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .plan_name {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .plan_name h4 {
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            padding: 1.9%;
+        }
+        
+        .plan_caract {
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            width: 247.9px;
+        }
+        
+        .icon_plan i {
+            color: #808080;
+            font-size: 48px;
+        }
+        
+        .feat01 {
+            color: #808080;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+        }
+        
+        .feat01 i {
+            color: #8cc63f;
+            font-size: 20px;
+            margin-right: 14px;
+        }
+        
+        .feat01 h5 {
+            font-size: 14px;
+        }
+        
+        .btn_plan {
+            background-color: #002989;
+            color: #fff;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            padding: 6px 12px 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn_plan:hover {
+            background-color: #001d5f;
+            color: #fff;
+        }
+        
+        .agree {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+        }
+        
+        .agree a {
+            color: #808080;
+        }
+        
+        .spec_feat {
+            color: #0071bc;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+        }
+        
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 31px 23px 2% 23px;
+        }
+        
+        .footer p {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            margin: 0;
+        }
+        
+        .destacado_aviso {
+            position: absolute;
+            margin-top: -16px;
+            margin-left: 132px;
+            z-index: 3;
+        }
+        
+        button:focus {
+            outline: none;
+            background-color: #f7f7f7;
+        }
+        
+        .accordion-item {
+            border: none;
+        }
+        
+        .section_tags {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+        }
+        
+        .line-select {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        .order-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        
+        .tag-container {
+            padding-top: 18px;
+            padding-bottom: 17px;
+            height: 516px;
+        }
+        
+        .accordion-body p {
+            font-weight: 600;
+            margin-left: 1%;
+        }
+        
+        .tag-order-list {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .accordion-body hr {
+            border: 1px solid #333;
+        }
+        
+        .tab-content {
+            overflow-y: scroll;
+            height: 321px !important;
+        }
+        
+        .switch,
+        .switch * {
+            padding-bottom: 2%;
+            padding-top: 2%;
+        }
+        
+        .group_cards .btn-volver {
+            color: #808080;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bback_01">
+        <div class="logo">
+            <img class="img img-fluid" src="./img/logo_blanco.png" alt="" />
+            <p class="logo_subtext">¡Aumenta tus oportunidades de venta!</p>
+        </div>
+        <div class="img_planes">
+            <img src="./img/img_planes.png" alt="" />
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="mensaje_01">
+            <p class="m01">
+                Únete a una comunidad formada por más de
+                <b class="ac01">19.000 empresas.</b>
+            </p>
+            <p class="m02">
+                En Senegocia hay <b class="ac01">+160 empresas</b> compradoras en diversos rubros económicos dispuestas a conocerte
+            </p>
+            <a class="btn_scroll" href="#scrollspyHeading1">Ver planes Senegocia
+          <i class="fas fa-chevron-down"></i>
+        </a>
+        </div>
+    </div>
+
+    <div class="section_planes" id="scrollspyHeading1">
+        <div class="bback_02">
+            <p class="m03">
+                Para acceder a todas estas oportunidades debes seleccionar alguno de nuestros planes:
+            </p>
+        </div>
+        <div class="group_cards">
+            <!--<a class="btn-volver" href="#seccion_categorias">
+                <i class="fal fa-chevron-double-left"></i>
+            </a>-->
+
+            <div class="bg-plan_card">
+                <div class="destacado_aviso">
+                    <img src="../img/plan_ribbon.png" alt="" />
+                </div>
+                <div class="float_plan_card" id="plan_flexible">
+                    <div class="icon_plan">
+                        <i class="fal fa-repeat"></i>
+                    </div>
+                    <div class="plan_name">
+                        <h4 class="plan01">Plan Flexible</h4>
+                    </div>
+                    <span class="badge bg-danger">+ Vendido</span>
+                    <div class="plan_caract">
+                        <div class="feat01">
+                            <i class="fas fa-usd-circle"></i>
+                            <h5>Sin costo de inscripción</h5>
+                        </div>
+                        <div class="feat01">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>Cada 3 meses se evalúa tus ventas, en base a éstas</h5>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                Aceptar <a href="">términos y condiciones</a>
+              </label>
+                    </div>
+                    <div class="btn_plan">Comprar ahora</div>
+                </div>
+            </div>
+            <div class="bg-plan_card">
+                <div class="float_plan_card" id="plan_membresia">
+                    <div class="icon_plan">
+                        <i class="fal fa-award"></i>
+                    </div>
+                    <div class="plan_name">
+                        <h4 class="plan01">Plan Membresía</h4>
+                    </div>
+                    <span class="badge bg-danger">+ Vendido</span>
+                    <div class="plan_caract">
+                        <div class="feat01">
+                            <i class="fas fa-usd-circle"></i>
+                            <h5>Se cobra UF 0,23 al inicio</h5>
+                        </div>
+                        <div class="feat01">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>Cada 3 meses se evalúa tus ventas, en base a éstas</h5>
+                        </div>
+                    </div>
+                    <div class="spec_feat">Valor único anual: UF 3.3</div>
+                    <div class="agree">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                Aceptar <a href="">términos y condiciones</a>
+              </label>
+                    </div>
+                    <div class="btn_plan">Comprar ahora</div>
+                </div>
+            </div>
+            <div class="bg-plan_card">
+                <div class="float_plan_card" id="plan_tramos">
+                    <div class="icon_plan">
+                        <i class="fal fa-chart-line"></i>
+                    </div>
+                    <div class="plan_name">
+                        <h4 class="plan01">Plan Tramos</h4>
+                    </div>
+                    <div class="plan_caract">
+                        <div class="feat01">
+                            <i class="fas fa-usd-circle"></i>
+                            <h5>Se cobra UF 0,23 al inicio</h5>
+                        </div>
+                        <div class="feat01">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>Cada 3 meses se evalúa tus ventas, en base a éstas</h5>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                Aceptar <a href="">términos y condiciones</a>
+              </label>
+                    </div>
+                    <div class="btn_plan">Comprar ahora</div>
+                </div>
+            </div>
+            <div class="bg-plan_card">
+                <div class="float_plan_card" id="plan_variable">
+                    <div class="icon_plan">
+                        <i class="fal fa-chart-network"></i>
+                    </div>
+                    <div class="plan_name">
+                        <h4 class="plan01">Plan Variable</h4>
+                    </div>
+                    <div class="plan_caract">
+                        <div class="feat01">
+                            <i class="fas fa-usd-circle"></i>
+                            <h5>Se cobra UF 0,23 al inicio</h5>
+                        </div>
+                        <div class="feat01">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>Cada 3 meses se evalúa tus ventas, en base a éstas</h5>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                Aceptar <a href="">términos y condiciones</a>
+              </label>
+                    </div>
+                    <div class="btn_plan">Comprar ahora</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Para mayor información contactenos al teléfono
+                <a href="tel:+ 56 2 29238700">+ 56 2 29238700</a> o enviando un correo a <a href="mailto:contacto@senegocia">contactos@senegocia.com</a>
+            </p>
+            <p>® Todos los derechos reservados Senegocia, 2021</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/18f1d9fe30.js" crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

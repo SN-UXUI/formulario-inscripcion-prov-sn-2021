@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>SN UX/UI "Maquetas formularios inscripción"</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" sizes="16x16" />
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+        body {
+            --main-color: #fff;
+            --azul-sn: #125f8b;
+            --gris-sn: #7a7a7a;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+        }
+        
+        .contenedor_tipo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 400;
+            z-index: -1;
+        }
+        
+        .logo_image img {
+            width: 250px;
+        }
+        
+        .logo_image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2%;
+        }
+        
+        .seccion_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: var(--azul-sn);
+            width: 100%;
+            height: 250px;
+            color: #fff;
+            z-index: -3;
+            position: sticky;
+        }
+        
+        .card_selection {
+            flex-direction: row;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 100%;
+            height: 15%;
+            background-color: #fff;
+            padding: 2%;
+            color: #7a7a7a;
+            text-decoration: none;
+            z-index: 3;
+            font-weight: 600;
+        }
+        
+        .card_selection:hover {
+            color: #7a7a7a;
+            background-color: #ebf5fb;
+        }
+        
+        .card_selection i {
+            margin-right: 1%;
+        }
+        
+        .card_selection p {
+            margin: 0;
+        }
+        
+        .contenedor_tipo {
+            box-shadow: 1px 3px 11px -1px rgba(0, 0, 0, 0.39);
+            width: 80%;
+            position: fixed;
+        }
+        
+        .menu_cnt {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            margin-top: -51px;
+        }
+        
+        hr {
+            margin: 0;
+            border: 1px solid rgb(143, 143, 143);
+            z-index: 3;
+            position: sticky;
+            width: 94%;
+        }
+        
+        .enunciado {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            width: 100%;
+        }
+        
+        .card_selection .enunciado span {
+            margin-left: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="seccion_header">
+        <div class="logo_image">
+            <img src="./img/logo_uxui_sn_0222.png" alt="" />
+        </div>
+        <h1>Maquetas formularios inscripción</h1>
+    </div>
+    <div class="menu_cnt">
+        <div class="contenedor_tipo">
+            <a class="card_selection" href="./nuevo_formulario.html">
+                <div class="enunciado">
+                    <i class="far fa-file-alt"></i>
+                    <p>Formulario de inscripción Proveedores Senegocia opción 1</p>
+                    <span class="badge bg-danger">REV 02</span>
+                </div>
+
+                <i class="fal fa-chevron-right"></i>
+            </a>
+            <hr />
+            <a class="card_selection" href="./nuevo_formulario_prop_02.html">
+                <div class="enunciado">
+                    <i class="far fa-file-alt"></i>
+                    <p>Formulario de inscripción Proveedores Senegocia opción 2</p>
+                    <span class="badge bg-danger">REV 02</span>
+                </div>
+
+                <i class="fal fa-chevron-right"></i>
+            </a>
+            <hr>
+            <a class="card_selection" href="./nuevo_formulario_prop_03.html">
+                <div class="enunciado">
+                    <i class="far fa-file-alt"></i>
+                    <p>Formulario de inscripción Proveedores Senegocia opción 3</p>
+                    <span class="badge bg-danger">REV 01</span>
+                </div>
+
+                <i class="fal fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://kit.fontawesome.com/18f1d9fe30.js" crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
